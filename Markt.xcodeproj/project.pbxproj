@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		86E69A7F2DC93F6700882D98 /* Exceptions for "Markt" folder in "Markt" target */ = {
+		8685B87D2DCA991100C18DE4 /* Exceptions for "Markt" folder in "Markt" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,10 +40,20 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		86E69A592DC93F6500882D98 /* Markt */ = {
+		8685B8472DCA968000C18DE4 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		8685B84A2DCA990B00C18DE4 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8685B8742DCA991100C18DE4 /* Markt */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				86E69A7F2DC93F6700882D98 /* Exceptions for "Markt" folder in "Markt" target */,
+				8685B87D2DCA991100C18DE4 /* Exceptions for "Markt" folder in "Markt" target */,
 			);
 			path = Markt;
 			sourceTree = "<group>";
@@ -88,7 +98,9 @@
 		86E69A4E2DC93F6500882D98 = {
 			isa = PBXGroup;
 			children = (
-				86E69A592DC93F6500882D98 /* Markt */,
+				8685B8742DCA991100C18DE4 /* Markt */,
+				8685B8472DCA968000C18DE4 /* App */,
+				8685B84A2DCA990B00C18DE4 /* Views */,
 				86E69A702DC93F6700882D98 /* MarktTests */,
 				86E69A7A2DC93F6700882D98 /* MarktUITests */,
 				86E69A582DC93F6500882D98 /* Products */,
@@ -121,7 +133,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				86E69A592DC93F6500882D98 /* Markt */,
+				8685B8472DCA968000C18DE4 /* App */,
+				8685B84A2DCA990B00C18DE4 /* Views */,
+				8685B8742DCA991100C18DE4 /* Markt */,
 			);
 			name = Markt;
 			packageProductDependencies = (
@@ -292,9 +306,11 @@
 				DEVELOPMENT_TEAM = A6635SAL2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Markt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Products;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,9 +336,11 @@
 				DEVELOPMENT_TEAM = A6635SAL2C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Markt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Products;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
