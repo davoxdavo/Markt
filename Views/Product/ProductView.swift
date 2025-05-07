@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ProductView: View {
+    @EnvironmentObject var context: Context
     var product: Product
     var isFavorite: Bool
-    @EnvironmentObject var context: Context
+    var favoriteToggled: (() -> Void)
     
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
@@ -33,7 +34,7 @@ struct ProductView: View {
             Spacer()
             VStack {
                 Button {
-                    
+                    favoriteToggled()
                 } label: {
                     Image(systemName: isFavorite ?  "bookmark.fill" : "bookmark")
                 }
@@ -54,11 +55,15 @@ struct ProductView: View {
 
 #Preview(traits: .sizeThatFitsLayout) {
     VStack {
-        ProductView(product: .mock()[4], isFavorite: true)
+        ProductView(product: .mock()[4], isFavorite: true) {
+            
+        }
             .environmentObject(
                 Context.mock)
             .padding()
-        ProductView(product: .mock()[1], isFavorite: false)
+        ProductView(product: .mock()[1], isFavorite: false) {
+            
+        }
             .environmentObject(
                 Context.mock)
             .padding()

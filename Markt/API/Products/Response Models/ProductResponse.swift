@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Product: Codable, Identifiable {
+struct Product: Codable, Hashable, Equatable, Identifiable {
     let id: Int
     let title: String
     let price: Double
@@ -17,7 +17,7 @@ struct Product: Codable, Identifiable {
     let creationAt, updatedAt: String
 }
 
-struct Category: Codable, Identifiable {
+struct Category: Codable, Hashable, Equatable, Identifiable {
     let id: Int
     let name: String
     let image: String

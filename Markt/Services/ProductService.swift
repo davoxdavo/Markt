@@ -47,7 +47,8 @@ class ProductService: ProductInteractor {
     }
     
     func isFavorite(_ productId: Int) -> Bool {
-        storageService.get(key: "\(productId)") ?? false
+        let isFavorite = storageService.get(key: "\(productId)") ?? false
+        return isFavorite
     }
     
     func setFavorite(_ productId: Int) {
