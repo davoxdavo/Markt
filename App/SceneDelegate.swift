@@ -51,7 +51,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let favoritesVC = UIHostingController(rootView: ThemeSettingsView()
             .environmentObject(context)
         )
-        favoritesVC.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star"), tag: 1)
+        favoritesVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 1)
         
         return [homeVC, favoritesVC]
     }
