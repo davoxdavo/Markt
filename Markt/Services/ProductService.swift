@@ -33,6 +33,7 @@ class ProductService: ProductInteractor {
     }
     
     func getProducts() async throws -> [Product] {
+        guard !isLoading else { return [] }
         isLoading = true
         let products = try await Task {
             try await networkService.request(ProductEndpoint(offset: offset, limit: limit), as: [Product].self)
